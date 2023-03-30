@@ -68,14 +68,17 @@ void q_short(int low, int high)
 		cmp_count++;
 
 		if (i < j)									// Langkah algoritma no 9
-		
-
-
-
-
+		{
+			swap(i, j);
+			mov_count++;
+		}
 	}
 	
-
+	if (low < j)									// Langkah algoritma no 11
+	{
+		swap(low, j);
+		mov_count++;
+	}
 
 
 
