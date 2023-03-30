@@ -49,7 +49,7 @@ void q_short(int low, int high)
 	pivot = arr[low];				// Langkah Algoritma no 2
 
 	i = low + 1;					// Langkah Algoritma no 3
-	
+	j = high;						// Langkah algoritma no 4
 
 
 
