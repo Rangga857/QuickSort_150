@@ -2,7 +2,7 @@
 using namespace std;
 
 int arr[20];			// Array of integers to hold values
-int camp_count = 0;		// Number of comparasion
+int cmp_count = 0;	
 int mov_count = 0;		// Number of data movements
 int n;
 
@@ -53,9 +53,22 @@ void q_short(int low, int high)
 
 	while (i <= j)					// Langkah algoritma no 10
 	{
-		while ((arr[i] <= pivot ) && (j <= high))	//Langkah Algoritma no 5
+		while ((arr[i] <= pivot) && (i <= high))	//Langkah Algoritma no 5
+		{
+			i++;									//Langkah Algoritma no 6
+			cmp_count++;
+		}
+		cmp_count++;
+
+		while ((arr[j] > pivot) && (j >=low))		// Langkah Algoritma no 7
+
+
+
+
+
 	}
 	
+
 
 
 
