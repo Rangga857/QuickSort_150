@@ -9,7 +9,7 @@ int n;
 void input() {
 	while (true)
 	{
-		cout << "Masukkan panjang element array";
+		cout << "Masukkan panjang element array : ";
 		cin >> n;
 
 		if (n <= 20)
@@ -85,9 +85,28 @@ void q_short(int low, int high)
 	// sort the list on the right of pivot using quick sort
 	q_short(j + 1, high);							//Langkah algoritma no 13
 
-
 }
+
+void display() {
+	cout << "\n-----------------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "\n-----------------" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
+	cout << "Number of data movement: " << mov_count << endl;
+}
+
 int main()
 {
+	input();
+	q_short(0, n - 1);			
+	display();
+	system("pause");
 
+	return 0;
 }
