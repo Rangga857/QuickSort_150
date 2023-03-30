@@ -80,7 +80,9 @@ void q_short(int low, int high)
 		mov_count++;
 	}
 
+	q_short(low, j - 1);							//Langkah algoritma no 12
+}
+int main()
+{
 
-
-		
 }
